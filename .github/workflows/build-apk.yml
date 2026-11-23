@@ -29,7 +29,7 @@ jobs:
 
       - name: Extract new project
         run: |
-          unzip -q DailyQuoteWidgetFresh-Project.zip -d extracted
+          unzip -q DailyQuoteWidgetFresh-Project-1.zip -d extracted
           PROJECT_DIR=$(find extracted -name settings.gradle.kts -printf '%h\n' | head -n 1)
           if [ -z "$PROJECT_DIR" ]; then
             echo "Project settings file missing"
